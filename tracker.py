@@ -1,13 +1,11 @@
-# Project: Expense Tracker - Installment 1
+# Project: Expense Tracker - Installment 2: Talking to the User
 # Author: Danica Fay E. Mina
-# Description: Landing page and main menu interface for the Expense Tracker program.
+# Description: Interactive expense tracker that prompts for user expenses and calculates total and average.
 
 print("=" * 40)
 print("\tEXPENSE TRACKER")
 print("\tKnow where your money goes...")
 print("=" * 40)
-
-print("\nWelcome! This is your personal expense tracker.\n")
 
 print("MAIN MENU")
 print("[1] Add an expense\t\t(coming soon)")
@@ -16,5 +14,25 @@ print("[3] Show total spent\t\t(coming soon)")
 print("[4] Exit\t\t\t(coming soon)")
 
 print("-" * 40)
-print("Made by: Danica Fay E. Mina | Installment 1")
+name = input("What's your name? ")
+print(f"Welcome, {name}! Let's log two expenses.\n")
+
+item1 = input("First expense? ")
+amount1 = float(input("Amount? "))
+
+item2 = input("Second expense? ")
+amount2 = float(input("Amount? "))
+
+total = amount1 + amount2
+average = total / 2
+
+print("\n" + "-" * 40)
+print("SUMMARY")
+print(f"{item1}:\t\t${amount1}")
+print(f"{item2}:\t\t${amount2}")
+print(f"Total spent:\t${total}")
+print(f"Average:\t${average}")
+print("-" * 40)
+
+print("Made by: Danica Fay E. Mina | Installment 2")
 print("=" * 40)
